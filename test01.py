@@ -31,9 +31,11 @@ yes_password = "88888888"
 account = input("请输入账号：")
 password = input("请输入密码：")
 
-while account != yes_account or password != yes_password:
-    print("账号或密码错误，请重新输入")
-    account = input("请输入账号：")
-    password = input("请输入密码：")
-else:
-    print("登陆成功")
+while True:
+    if account == yes_account and password == yes_password:
+        print("登录成功")
+        break
+    else:
+        print("账号或密码错误，请重新输入")
+        account = input("请输入账号：")
+        password = input("请输入密码：")
