@@ -9,4 +9,4 @@ for idx in range(0,6):
         r+= (i-arr[idx])*rat[idx]
         print((i-arr[idx])*rat[idx])
         i = arr[idx]
-print("奖金为：",r)
+print(f"奖金为：{r}")
